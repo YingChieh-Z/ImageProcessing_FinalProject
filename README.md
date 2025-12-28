@@ -1,0 +1,39 @@
+# 手勢辨識系統 (Hand Gesture Recognition System)
+本專案開發了一個全方位的手勢辨識解決方案，能夠辨識特定手勢（類別：1、2 以及 None）。
+系統基於 Google MediaPipe 技術開發，並包含完整的訓練、即時偵測與批次評估功能。
+
+## 檔案結構說明
+專案採用結構化的目錄管理，以便於區分開發的不同階段：
+
+* **/models**：存放訓練完成的模型檔案 (gesture_recognizer.task)，供所有偵測程式調用。
+
+* **/training**：包含模型訓練腳本 (training.py) 以及用於訓練原始資料集。
+
+* **/testing_realtime**：包含即時影像偵測程式，可透過網頁攝影機 (Webcam) 進行現場演示。
+
+* **/testing_batch**：包含批次評估程式 (batch_eval.py)，用於自動化測試大量圖片並產出精確度報告。
+
+## 評估結果分析
+模型在 100 張批次測試圖片上的表現如下：
+
+* **手勢 1 (Gesture 1)**：33 張中有 25 張辨識正確。
+
+* **手勢 2 (Gesture 2)**：33 張中有 30 張辨識正確。
+
+* **無手勢/非上述兩種手勢 (None)**：34 張中 34 張全部辨識正確。
+
+## 環境需求
+* Python 3.12+
+
+* OpenCV (opencv-python)
+
+* MediaPipe 0.10.14
+
+* Pandas
+
+## 作者資訊
+* 系級：資科三
+
+* 學號：U11216024
+
+* 姓名：張瑩婕 (Chang, Yin-Chieh)
