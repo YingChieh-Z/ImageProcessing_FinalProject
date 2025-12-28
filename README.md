@@ -5,7 +5,7 @@
 ## 檔案結構說明
 專案採用結構化的目錄管理，以便於區分開發的不同階段：
 
-* **/models**：存放訓練完成的模型檔案 (gesture_recognizer.task)，供所有偵測程式調用。
+* **/models**：存放訓練完成的模型檔案 (gesture_recognizer.task)。
 
 * **/training**：包含模型訓練腳本 (training.py) 以及由 462 張照片組成的原始訓練資料集(手勢 1 有 147 張照片、手勢 2 有 144 張照片、none 有 171 張照片)。
 
